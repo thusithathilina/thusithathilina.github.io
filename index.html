@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en-us" class="m-auto dark"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>Thusitha Thilina Dayaratne</title>
+
+<meta name="theme-color" content="" />
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta name="description" content="Personal website" />
+<meta name="author" content="Thusitha Dayaratne" />
+<meta name="generator" content="aafu theme by Darshan in Hugo 0.138.0" />
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">        <link rel="manifest" href="/site.webmanifest">        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">        <link rel="shortcut icon" href="/favicon.ico">
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
+  />  
+
+  
+  
+
+
+
+  <link href="/main.css" rel="stylesheet" />
+
+  <script>
+    let html = document.querySelector("html");
+    let theme = window.localStorage.getItem("theme");
+    if (theme) {
+      theme === "dark"
+        ? html.classList.add("dark")
+        : html.classList.remove("dark");
+    } else if (html.classList.contains("dark")) {
+      window.localStorage.setItem("theme", "dark");
+    } else {
+      html.classList.remove("dark");
+      window.localStorage.setItem("theme", "light");
+    }
+
+    window.onload = () => {
+      let themeToggle = document.querySelector(".theme-toggle");
+      if (window.localStorage.getItem("theme") === "dark") {
+        themeToggle.classList.remove("bi-moon-fill");
+        themeToggle.classList.add("bi-brightness-high");
+      } else {
+        themeToggle.classList.add("bi-moon-fill");
+        themeToggle.classList.remove("bi-brightness-high");
+      }
+
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+
+    window.onresize = () => {
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+  </script>
+</head>
+<body class="h-screen p-2 m-auto max-w-4xl flex flex-col">
+    
+    <header
+  class="nav flex flex-row row py-2 mb-6 w-full border-b border-gray-300 dark:border-gray-700 justify-between"
+>
+  <div>
+    <a class="no-underline p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800" href="http://localhost:1313/">Home</a>    
+    
+  </div>
+  <div>
+  <a class="mr-4" href="/search"><i class="fas fa-search"></i></i></a>
+  <i
+    class="fas fa-sun theme-toggle text-blue-500 hover:text-blue-700 dark:text-yellow-300 dark:hover:text-yellow-500 cursor-pointer text-lg mr-9 sm:mr-0"
+    onclick="lightDark(this)"
+  ></i>
+</div>
+</header>
+
+<script>
+  const lightDark = (el) => {
+    let html = document.querySelector("html");
+    if (html.classList.contains("dark")) {
+      html.classList.remove("dark");
+      el.classList.add("fa-moon");
+      el.classList.remove("fa-sun");
+      window.localStorage.setItem("theme", "light");
+    } else {
+      html.classList.add("dark");
+      el.classList.add("fa-sun");
+      el.classList.remove("fa-moon");
+      window.localStorage.setItem("theme", "dark");
+    }
+  };
+</script>
+
+    
+    <main class="grow">
+<div class="grid grid-cols-1 md:grid-cols-5 gap-2 sm py-2">
+  <div class="col-span-2">
+    <div class="bg-gray-300 dark:bg-darker rounded drop-shadow-md p-2">
+      <div class="flex flex-col justify-center">
+        <div class=""><div class="w-100 h-100 flex justify-center p-4">
+  <img
+    class="rounded rounded-full"
+    src="/images/Thusitha.jpg"
+    alt="Thusitha Dayaratne"
+    style="max-width: 250px"
+  />
+</div>
+</div>
+        <div class="p-2 text-center">
+          <h1 class="mb-0">Thusitha Dayaratne</h1>
+<h3 class="mb-0">Cybersecurity Researcher</h3>
+<h4 class="mb-4">Melbourne, Australia</h4>
+<div class="mb-4 flex flex-wrap justify-center">
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="https://linkedin.com/in/thusithathilina">
+      <i class="mt-1 fab fa-linkedin-in"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="https://stackoverflow.com/users/2125973/thusitha-thilina-dayaratne">
+      <i class="mt-1 fab fa-stack-overflow"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="https://github.com/thusithathilina">
+      <i class="mt-1 fab fa-github"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="#">
+      <i class="mt-1 fab fa-orcid"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="https://scholar.google.com.my/citations?user=Xhyh2BAAAAAJ&amp;hl=en">
+      <i class="mt-1 ai ai-google-scholar"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="https://www.researchgate.net/profile/Thusitha-Dayaratne">
+      <i class="mt-1 fab fa-researchgate"></i>
+    </a>
+  </div>
+  
+</div>
+ <footer class="text-sm text-center border-t border-gray-300 dark:border-gray-700  pt-2 ">
+  <p class="markdownify"></p>
+  <p >
+    <i>
+      Created using Hugo themes (aafu)
+    </i>
+  </p>
+</footer>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-span-3 relative">
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion active">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-user"></i>
+          About Me</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class=""><p class="markdownify">
+  I am a Research Fellow in the Department of Software Systems and Cybersecurity at Monash University, with a primary focus on the cybersecurity of cyber-physical systems (CPS). My research interests lie in securing critical infrastructure, including smart energy systems and cellular networks, where the adoption of these technologies is rapidly expanding. The distributed nature of these systems presents significant challenges for central control, as data and control sources often reside outside traditional perimeters.
+</p>
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-graduation-cap"></i>
+          Education</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class="">
+
+<h4 style="text-decoration: underline;">Ph.D.</h4>
+<p class="mb-0" >2017 - 2021 &middot; Monash University, Australia</p>
+
+
+<p>
+  Thesis:
+  <a href="https://bridges.monash.edu/articles/thesis/False_Data_Injection_Attacks_Against_Distributed_Residential_Demand_Response_Systems_in_Smart_Grids/15180546"><i>False Data Injection Attacks Against Distributed Residential Demand Response Systems in Smart Grids</i></a>
+</p>
+
+
+
+
+<h4 style="text-decoration: underline;">B.S. (Hons) in IT</h4>
+<p >2009 - 2013 &middot; University of Moratuwa, Sri Lanka</p>
+
+
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-book"></i>
+          Publications</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class="">
+
+
+<h4 style="text-decoration: underline;">Proceedings</h4><p class="foo indent-8">2024.
+
+
+<a href="https://ieeexplore.ieee.org/abstract/document/10738059/">
+  <em>Resilient Automated Distributed Device Scheduling in Smart Grids under False Data Injection Attacks.</em>
+</a>
+
+
+T Dayaratne, C Rudolph, M Salehi, A Liebman.
+2024 IEEE International Conference on Communications, Control, and Computing Technologies for Smart Grids (SmartGridComm).
+</p>
+<p class="foo indent-8">2022.
+
+
+<a href="https://ieeexplore.ieee.org/abstract/document/9833475/">
+  <em>False data injection attack detection for secure distributed demand response in smart grids.</em>
+</a>
+
+
+T Dayaratne, M Salehi, C Rudolph, A Liebman.
+2022 52nd Annual IEEE/IFIP International Conference on Dependable Systems and Networks (DSN).
+</p>
+<p class="foo indent-8">2021.
+
+
+<a href="https://dl.acm.org/doi/abs/10.1145/3422337.3447826">
+  <em>We Can Pay Less: Coordinated False Data Injection Attack Against Residential Demand Response in Smart Grids.</em>
+</a>
+
+
+T Dayaratne, C Rudolph, A Liebman, M Salehi.
+Proceedings of the Eleventh ACM Conference on Data and Application Security and Privacy.
+</p>
+<p class="foo indent-8">2021.
+
+
+<a href="https://ieeexplore.ieee.org/abstract/document/9248790/">
+  <em>Robust Demand Response for Device Scheduling under False Data Injection Attacks in Smart Grids.</em>
+</a>
+
+
+T Dayaratne, C Rudolph, A Liebman, M Salehi.
+2020 IEEE PES Innovative Smart Grid Technologies Europe (ISGT-Europe).
+</p>
+<p class="foo indent-8">2020.
+
+
+<a href="https://ieeexplore.ieee.org/abstract/document/9110476/">
+  <em>Inherent Vulnerability of Demand Response Optimisation against False Data Injection Attacks in Smart Grids.</em>
+</a>
+
+
+T Dayaratne, C Rudolph, A Liebman, M Salehi.
+NOMS 2020-2020 IEEE/IFIP Network Operations and Management Symposium.
+</p>
+<p class="foo indent-8">2019.
+
+
+<a href="https://ieeexplore.ieee.org/abstract/document/8905473/">
+  <em>High Impact False Data Injection Attack against Real-time Pricing in Smart Grids.</em>
+</a>
+
+
+T Dayaratne, C Rudolph, A Liebman, M Salehi, S He.
+2019 IEEE PES Innovative Smart Grid Technologies Europe (ISGT-Europe).
+</p>
+
+
+<h4 style="text-decoration: underline;">Chapters</h4><p class="foo indent-8">2023.
+
+
+<a href="https://link.springer.com/chapter/10.1007/978-3-031-20360-2_5">
+  <em>Improving Cybersecurity Situational Awareness in Smart Grid Environments.</em>
+</a>
+
+
+TT Dayaratne, FT Jaigirdar, R Dasgupta, A Sakzad, C Rudolph.
+Power Systems Cybersecurity: Methods, Concepts, and Best Practices.
+</p>
+<p class="foo indent-8">2022.
+
+
+<a href="https://www.sciencedirect.com/science/article/pii/B9780323916981000017">
+  <em>False data injection attacks on distributed demand response: I’m paying less: A targeted false data injection attack against distributed device scheduling.</em>
+</a>
+
+
+TT Dayaratne, C Rudolph, A Liebman, M Salehi.
+Decentralized Frameworks for Future Power Systems.
+</p>
+
+
+<h4 style="text-decoration: underline;">Preprints</h4><p class="foo indent-8">2024.
+
+
+<a href="https://arxiv.org/abs/2406.12299">
+  <em>Exploiting and Securing ML Solutions in Near-RT RIC: A Perspective of an xApp.</em>
+</a>
+
+
+T Dayaratne, V Vo, B Haydon, X Yuan, S Lai, S Abuadbba, H Suzuki, C Rudolph.
+arXiv.
+</p>
+<p class="foo indent-8">2024.
+
+
+<a href="https://arxiv.org/abs/2406.12330">
+  <em>Security and Privacy of 6G Federated Learning-enabled Dynamic Spectrum Sharing.</em>
+</a>
+
+
+V Vo, T Dayaratne, B Haydon, X Yuan, S Lai, S Abuadbba, H Suzuki, C Rudolph.
+arXiv.
+</p>
+<p class="foo indent-8">2024.
+
+
+<a href="https://arxiv.org/abs/2405.02476">
+  <em>SSI4IoT: Unlocking the Potential of IoT Tailored Self-Sovereign Identity.</em>
+</a>
+
+
+T Dayaratne, X Fan, Y Liu, C Rudolph.
+arXiv.
+</p>
+<p class="foo indent-8">2024.
+
+
+<a href="https://arxiv.org/abs/2404.18453">
+  <em>Fostering Trust in Smart Inverters: A Framework for Firmware Update Management and Tracking in VPP Context.</em>
+</a>
+
+
+T Dayaratne, C Rudolph, T Shirley, S Levi, D Shirley.
+arXiv.
+</p>
+<p class="foo indent-8">2024.
+
+
+<a href="https://arxiv.org/abs/2312.08646">
+  <em>Guarding the Grid: Enhancing Resilience in Automated Residential Demand Response Against False Data Injection Attacks.</em>
+</a>
+
+
+T Dayaratne, C Rudolph, A Liebman, M Salehi.
+arXiv.
+</p>
+
+
+
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-gamepad"></i>
+          Hobbies</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class=""><ul class="pl-0">
+  
+  <li class="list-unstyled mb-2">Travelling</li>
+  
+  <li class="list-unstyled mb-2">Netflixing</li>
+  
+  <li class="list-unstyled mb-2">Reading</li>
+  
+</ul>
+</div>
+      </div>
+    </div>
+    
+
+    <script src="/js/accordion.js"></script>
+  </div>
+</div>
+
+    </main>
+    
+  </body>
+</html>
